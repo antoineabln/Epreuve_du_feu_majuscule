@@ -1,0 +1,28 @@
+let chaine = "Bien le bonjour!";
+
+
+for (let i = 0; i < chaine.length ; i++){
+  
+  
+if (i === 0) {
+  
+ let maj = chaine[0].toLowerCase(); 
+   chaine = chaine.replace(chaine[0], maj);
+  
+  
+} else if (i % 2 === 0) {
+  
+  let maj = chaine[i].toLowerCase(); 
+   chaine = chaine.replace(chaine[i], maj);
+  
+  
+} else {
+  
+   let maj = chaine[i].toUpperCase(); 
+   chaine = chaine.replace(chaine[i], maj);
+ 
+  
+}
+ 
+}
+ console.log(chaine);
